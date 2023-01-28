@@ -1,0 +1,23 @@
+class Bst<T> {
+    priv var left: Bst<T>;
+    priv var right: Bst<T>;
+    priv var val: T;
+
+    pub func constructor(val: T) {
+        this.left = null;
+        this.right = null;
+        this.val = val
+    }
+
+    pub func getVal() -> T {
+        return this.val;
+    }
+
+    pub func getLeft() -> Bst<T> {
+        return this.left;
+    }
+
+    pub func getRight() -> Bst<T> {
+        return this.right;
+    }
+}
